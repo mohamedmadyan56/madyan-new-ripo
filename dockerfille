@@ -1,0 +1,5 @@
+FROM openjdk
+WORKDIR /application
+COPY madyan.java .
+RUN javac madyan.java
+CMD java madyan
